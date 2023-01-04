@@ -36,3 +36,101 @@
     transform: rotate(360deg);
   }
 }
+
+
+.Panel {
+ min-width :320px;
+ background-color: white;
+ padding:26px;
+ display: flex;
+ flex-direction: column;
+}
+
+p {
+  max-width: 255px;
+  word-wrap: break-word;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  line-height: 24px;
+  position: relative;
+	padding: 8px 16px;
+  border-radius: 25px;
+  
+}
+p::before, p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 24px;
+}
+
+.from-me {
+	color: white; 
+	background: #0B93F6;
+	align-self: flex-end;
+}
+
+.from-me::before {
+  right: -7px;
+  width: 20px;
+  background-color: #0B93F6;
+  border-bottom-left-radius: 16px 14px;
+}
+
+.from-me::after {
+  right: -26px;
+  width: 26px;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+}
+
+.from-them {
+	background: #E5E5EA;
+	color: black;
+  align-self: flex-start;
+}
+
+.from-them::before {
+  left: -7px;
+  width: 20px;
+  background-color: #E5E5EA;
+  border-bottom-right-radius: 16px;
+}
+
+.from-them::after {
+  left: -26px;
+  width: 26px;
+  background-color: white;
+  border-bottom-right-radius: 10px;
+}
+
+
+.Input {
+  border-radius: 12px;
+  border-color:#BEBEBE;
+  border-width: 1px;
+  border-style: solid;
+  margin-top: 20px;
+  height: 18px;
+  padding: 6px;
+ }
+
+ .Input:focus-visible  {
+  outline: none;
+ }
+
+ .Input::placeholder{
+ color:#E5E5EA
+ }
+
+
+ .iphone-message {
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
