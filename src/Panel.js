@@ -1,6 +1,5 @@
 import "./App.css";
 import React from "react";
-import { toBeEmptyDOMElement } from "@testing-library/jest-dom/dist/matchers";
 
 const obj = { text: " dfdfdfdfdfdfddf test", user: "me" };
 const obj1 = { text: " message1 test", user: "them" };
@@ -16,6 +15,7 @@ function Panel() {
         if (event.key === "Enter") {
           let temp ={text:event.target.value, user:"me"};
           setArrayMessages(arrayMessages => [...arrayMessages, temp])
+          event.target.value="";
         }
       };
 
